@@ -14,8 +14,31 @@ html,body{
 /* % is dependent on parent and px is fixed */
 
 
-#box{
+/* #box{
     height: 200px;
     width: 200px;
     background-color: red;
-}
+} */
+
+/* vw & vh 
+vw-viewport width depending on screen width
+vh- depending on viewport height
+*/
+
+/* #box{
+    height: 20vh;
+    width: 20vw;
+    background-color: red;
+} */
+
+
+/* vmax & vmin
+vmax-choose viewport which is maximum dynamically
+vmin-changes as per the smallest viewport dynamically
+*/
+
+/* #box{
+    height: 20vmax;
+    width: 20vmax;
+    background-color: red;
+} */
