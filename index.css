@@ -42,3 +42,34 @@ vmin-changes as per the smallest viewport dynamically
     width: 20vmax;
     background-color: red;
 } */
+
+/* em & rem
+em-change as per parent font size, for padding depend on current element font size
+rem- change as per root font size which is 16px
+*/
+
+#parent{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(91, 204, 167);
+    font-size: 10px;
+}
+h1{
+    font-size: 4em;
+}
+h3{
+    font-size: 2em;
+}
+
+
+#parent{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(91, 204, 167);
+}
+h1{
+    font-size: 4rem;
+}
+h3{
+    font-size: 2rem;
+}
