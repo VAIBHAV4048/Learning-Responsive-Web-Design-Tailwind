@@ -83,3 +83,45 @@ h3{
 /* p{
     margin-top: 2lh;
 } */
+
+/* .parent{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: aquamarine;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    color: white;
+    align-content: flex-start;
+}
+.child1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    flex-shrink: 0;
+}
+.child2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(139, 7, 99);
+    flex-shrink: 0;
+}
+.child3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(23, 190, 5);
+    flex-shrink: 0;
+}
+.oo{
+    align-self: flex-start;
+    order:1; 
+} */
+
+/* the element with lowest order comes first, by default sbka zero hota hai */
+
+/* // flex grow tell how element will grow compared to others
+ */
+
+ /* // flex basis how much initial width for flex direction row and height for flex direction column */
