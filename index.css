@@ -125,3 +125,47 @@ h3{
  */
 
  /* // flex basis how much initial width for flex direction row and height for flex direction column */
+
+/* grid-template-columns: repeat(auto-fill,200px); ye khega ku jitne 200px ke column bn sakte hai bnao chahe khali ho , aur auto-fit khta hai khali waale collapse krdo */
+/* grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  */
+/* grid-auto-rows: 200px;  YE BROWSER APNE AP ROW BANEGA 200PX KI*/
+/* justify-content: space-between; */
+/* align-items: center; */
+    /* grid-area: 1/1/3/4; */
+
+  /*   grid ara ko hum name bhi de skte hai pr yaad rkho grid-template-areas ka rule hai ki named area rectangle hona chahiye aur . empty cell denote krta hai grid-area:rowstart column start row end column end  is ko grid-row aur grid-column me todke bhi likh skte hai */
+/* .parent{
+display: grid;
+height: 100vh;
+padding: 20px;
+gap: 10px;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(3,100px);
+
+
+}
+.child1{
+    background-color: rgb(1, 75, 75);
+    width: 100px;
+    height: 100px;
+
+}
+.child2{
+    background-color: rgb(75, 1, 1);
+     width: 100px;
+    height: 100px;
+}
+.child3{
+    background-color: rgb(114, 74, 6);
+}
+.child4{
+    background-color: rgb(16, 101, 1);
+}
+.child5{
+    background-color: rgb(124, 108, 2);
+    min-height: 100px;
+}
+.child6{
+    background-color: rgb(98, 4, 79);
+    min-height: 100px;
+} */
