@@ -1,20 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
 }
 
 /* units in css */
 
 /* px and % */
 /* % is dependent on parent and px is fixed */
-
 
 /* #box{
     height: 200px;
@@ -32,7 +32,6 @@ vh- depending on viewport height
     width: 20vw;
     background-color: red;
 } */
-
 
 /* vmax & vmin
 vmax-choose viewport which is maximum dynamically
@@ -62,7 +61,6 @@ h1{
 h3{
     font-size: 2em;
 } */
-
 
 /* #parent{
     height: 400px;
@@ -126,16 +124,16 @@ h3{
 /* // flex grow tell how element will grow compared to others
  */
 
- /* // flex basis how much initial width for flex direction row and height for flex direction column */
+/* // flex basis how much initial width for flex direction row and height for flex direction column */
 
 /* grid-template-columns: repeat(auto-fill,200px); ye khega ku jitne 200px ke column bn sakte hai bnao chahe khali ho , aur auto-fit khta hai khali waale collapse krdo */
 /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  */
 /* grid-auto-rows: 200px;  YE BROWSER APNE AP ROW BANEGA 200PX KI*/
 /* justify-content: space-between; */
 /* align-items: center; */
-    /* grid-area: 1/1/3/4; */
+/* grid-area: 1/1/3/4; */
 
-  /*   grid ara ko hum name bhi de skte hai pr yaad rkho grid-template-areas ka rule hai ki named area rectangle hona chahiye aur . empty cell denote krta hai grid-area:rowstart column start row end column end  is ko grid-row aur grid-column me todke bhi likh skte hai */
+/*   grid ara ko hum name bhi de skte hai pr yaad rkho grid-template-areas ka rule hai ki named area rectangle hona chahiye aur . empty cell denote krta hai grid-area:rowstart column start row end column end  is ko grid-row aur grid-column me todke bhi likh skte hai */
 /* .parent{
 display: grid;
 height: 100vh;
@@ -172,8 +170,7 @@ grid-template-rows: repeat(3,100px);
     min-height: 100px;
 } */
 
-
-.parent{
+/* .parent{
     width:100%;
     height: 1500px;
     background-color: rgb(116, 115, 115);
@@ -186,7 +183,7 @@ padding: 1rem;
 }
 .anthr{
     background-color: rgb(150, 150, 149);
-}
+} */
 /* .box2{
     width: 200px;
     height: 200px;
@@ -195,14 +192,14 @@ padding: 1rem;
   right: 0px;
   top: 0px;
 } */
-.box2{
+/* .box2{
     width: 200px;
     height: 200px;
     background-color: rgb(135, 222, 136);
   position: fixed;
   right: 0px;
   bottom: 0px;
-}
+} */
 /* .box2{
     width: 200px;
     height: 200px;
@@ -219,8 +216,79 @@ padding: 1rem;
   right: 0px;
   top: 0px;
 } */
-.box3{
+/* .box3{
     width: 300px;
     height: 300px;
     background-color: rgb(222, 135, 186);
+} */
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(120, 168, 151);
+  color: white;
+  transition: transform 1s ease;
+}
+/* transform: rotate(180deg); rotates in z axis  means axis coming towards us from screen */
+/* transform:rotate(1turn); 1 turn means move 360deg */
+/* By default the center for rotation is assumed element center but it can be changed using transorm-origin */
+/* transform-origin: top center; */
+/* .box:hover {
+  transform: rotate(180deg);
+} */
+/*  .box:hover{
+    transform: translate(-50%, -50%);
+ } */
+/* transform: translate(20px, 10px);  first is x axis value 2nd y axis */
+/* we can also use translateX , translateY */
+/*  .box:hover{
+    
+    transform: scale(2);
+ } */
+
+/* transform: scale(2);  scales from center in both horizontal and vertical direc */
+/* transform: scale(4, 1.5);  4x :horizontal 1.5x vertical */
+/* transform: scale(-4, 1.5); negative value will flip the element */
+
+/*  transform: scale(0, 1.5); makes element invisible
+
+val>1 grow
+val<1 shrink */
+
+/* by default scaling start with center as reference but it can be changed transform-origin: top left; */
+
+/*  .box:hover{
+    
+    transform: skewX(20deg); 
+transform: skewX(-20deg);
+transform: skewY(20deg);
+transform: skewY(-20deg);
+ } */
+
+/*  skewX() → horizontal slant (left-right distortion)
+skewY() → vertical slant (up-down distortion) */
+
+/* unit are turn deg rad */
+
+/* by default elements skews around center can be changecd via transform-originjj */
+
+/* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+
+/* .box:hover{
+transform: matrix(1,0,0,1,20,30);
+} */
+/* .box:hover {
+  transform: translate(50px, 20px) rotate(45deg) scale(1.2) skewX(10deg);
+}
+ */
+
+ /* Matrix is the mathematical representation used internally by the browser for transforms. In practice, developers usually use translate, rotate, scale, and skew directly. */
