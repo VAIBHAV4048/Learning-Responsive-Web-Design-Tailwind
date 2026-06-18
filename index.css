@@ -236,7 +236,7 @@ padding: 1rem;
   align-items: center;
   background-color: rgb(120, 168, 151);
   color: white;
-  transition: transform 1s ease;
+  transition: transform .3s ease-in .1s, background-color .5s ease .2s;
 }
 /* transform: rotate(180deg); rotates in z axis  means axis coming towards us from screen */
 /* transform:rotate(1turn); 1 turn means move 360deg */
@@ -292,3 +292,24 @@ transform: matrix(1,0,0,1,20,30);
  */
 
  /* Matrix is the mathematical representation used internally by the browser for transforms. In practice, developers usually use translate, rotate, scale, and skew directly. */
+
+
+.box:hover{
+    transform:skew(18deg);
+    background-color: burlywood;
+}
+
+/* ease:speed up in middle
+ease in: speed up in :end
+ease out starts fast
+linear: constant speed from start to end
+steps: for step by step transition
+cubic-beizer:for cutom animation with value x1 y1 x2 y2 */
+/* Defines a custom animation speed curve.
+First control point affects how the animation starts.
+Second control point affects how the animation ends.
+x values represent time.
+y values represent progress. */
+/* transition: transitionProperty transitionDuration TransitionTimingFunction TransitionDelay,other property */
+/* if we want to animate more than one property we can animate using a comma in transition 
+and for animating all properties just use all keyword */
