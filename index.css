@@ -222,7 +222,7 @@ padding: 1rem;
     background-color: rgb(222, 135, 186);
 } */
 
-.parent {
+/* .parent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +237,7 @@ padding: 1rem;
   background-color: rgb(120, 168, 151);
   color: white;
   transition: transform .3s ease-in .1s, background-color .5s ease .2s;
-}
+} */
 /* transform: rotate(180deg); rotates in z axis  means axis coming towards us from screen */
 /* transform:rotate(1turn); 1 turn means move 360deg */
 /* By default the center for rotation is assumed element center but it can be changed using transorm-origin */
@@ -294,10 +294,10 @@ transform: matrix(1,0,0,1,20,30);
  /* Matrix is the mathematical representation used internally by the browser for transforms. In practice, developers usually use translate, rotate, scale, and skew directly. */
 
 
-.box:hover{
+/* .box:hover{
     transform:skew(18deg);
     background-color: burlywood;
-}
+} */
 
 /* ease:speed up in middle
 ease in: speed up in :end
@@ -313,3 +313,16 @@ y values represent progress. */
 /* transition: transitionProperty transitionDuration TransitionTimingFunction TransitionDelay,other property */
 /* if we want to animate more than one property we can animate using a comma in transition 
 and for animating all properties just use all keyword */
+
+
+/* div{
+    border: 2px solid black;
+    height:60px;
+overflow: auto;
+} */
+/*  overflow: visible;This is the default.
+ overflow: hidden;Use when you want a clean fixed area.
+Important: the hidden part still exists in the DOM, but the user cannot see it or scroll to it.
+  overflow: clip;
+   overflow-clip-margin: 20px;
+    overflow: scroll;Scrollbars are always shown, even if content fits.box */
